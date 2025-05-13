@@ -9,6 +9,7 @@ const downloadLink = document.getElementById('download-link');
 navigator.mediaDevices.getUserMedia({ video: true })
   .then(stream => {
     video.srcObject = stream;
+    video.play();
   })
   .catch(err => {
     alert("Camera access denied or not supported 😕");
