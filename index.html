@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>You've Been Pranked!</title>
+  <title>📸 Take Your Pic!</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="start-screen">
-    <h1>⚠️ Warning ⚠️</h1>
-    <p>This link might prank you... Are you ready?</p>
-    <button onclick="startPrank()">I'm Ready!</button>
-  </div>
+  <div id="app">
+    <h1>🚨 Ready to Get Pranked?</h1>
+    <p>Please allow camera access when prompted.</p>
 
-  <div id="prank-screen" class="hidden">
-    <h1>😂 You've Been Pranked!</h1>
-    <p>Congrats! You clicked the button and got pranked.</p>
-    <button onclick="playSound()">Play Sound</button>
-    <button onclick="confettiStorm()">Add Confetti</button>
-    <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif " alt="Prank GIF" />
-  </div>
+    <video id="video" autoplay></video>
+    <button id="snap" onclick="capture()">Take My Silly Picture!</button>
 
-  <audio id="prank-sound" src="https://www.soundjay.com/human/sounds/evil-laugh-01.mp3 "></audio>
+    <canvas id="canvas" class="hidden"></canvas>
+    <div id="result" class="hidden">
+      <h2>Gotcha!</h2>
+      <img id="photo" src="" alt="Your face!" />
+      <p>Funny caption: "Caught being silly 😈"</p>
+      <a id="download-link" download="prank-selfie.png">💾 Download Your Face</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
