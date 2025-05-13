@@ -1,8 +1,21 @@
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #ffe6e6;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #fffbe6;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 5px solid red;
+  margin-top: 20px;
 }
 
 button {
@@ -10,16 +23,30 @@ button {
   color: white;
   border: none;
   padding: 15px 25px;
-  margin: 10px;
-  font-size: 18px;
+  margin-top: 20px;
+  font-size: 1.2em;
   cursor: pointer;
   border-radius: 10px;
+  width: 90%;
+  max-width: 300px;
 }
 
 .hidden {
   display: none;
 }
 
-h1 {
-  font-size: 3em;
+#photo {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
+  border: 3px dashed black;
+  border-radius: 10px;
+}
+
+#download-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1em;
+  color: blue;
+  text-decoration: underline;
 }
