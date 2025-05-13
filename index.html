@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📸 Take Your Pic!</title>
+  <title>📸 Gotcha!</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
     <h1>🚨 Ready to Get Pranked?</h1>
     <p>Please allow camera access when prompted.</p>
 
-    <video id="video" autoplay></video>
-    <button id="snap" onclick="capture()">Take My Silly Picture!</button>
+    <video id="video" autoplay playsinline></video>
+    <button onclick="capture()">Take My Silly Picture!</button>
 
     <canvas id="canvas" class="hidden"></canvas>
     <div id="result" class="hidden">
